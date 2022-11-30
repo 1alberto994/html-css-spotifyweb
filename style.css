@@ -13,15 +13,25 @@ body{
     --second-border-bottom:2px solid white;
     --padding:10px;
 }
+.body-container{
+    display: flex;
+    
+    justify-content: space-between;
+}
 .window{
-    max-width: 200px;
+    width: 30%;
     background-color:#000000;
-    position: absolute;
-    top: 0;
-    left: 0;
     
     
-   
+}
+main{
+    background-color: red;
+    height: 100px;
+}
+.first-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 .main-header{
     background-color: #080b12;
@@ -30,7 +40,6 @@ body{
     /* max-width: 1000px; */
     display: flex;
     justify-content: flex-end;
-    position: relative;
     padding: 10px;
 }
 .header-container{
