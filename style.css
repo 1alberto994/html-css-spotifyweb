@@ -19,25 +19,21 @@ body{
     justify-content: space-between;
 }
 .window{
-    width: 30%;
+    width: 20%;
     background-color:#000000;
     
     
 }
 main{
-    background-color: red;
-    height: 100px;
+    background-color: #141922;
 }
 .first-container{
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
 .main-header{
     background-color: #080b12;
-    /* position: fixed;
-    z-index: 1px; */
-    /* max-width: 1000px; */
     display: flex;
     justify-content: flex-end;
     padding: 10px;
@@ -118,3 +114,53 @@ hr{
     margin-top: 150px;
 }
 /* FINE ASIDE */
+.first-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    display: flex;
+}
+.second-section{
+    margin-top: 20px;
+}
+h2,h3{
+    color: white;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.img-main{
+    overflow: hidden;
+    height: 150px;
+    display: block;
+}
+.center{
+    text-align: center;
+}
+.text{
+    text-align: center;
+}
+p{
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+.ciao{
+    position: relative;
+    margin: 0 auto;
+}
+.overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.ciao:hover .overlay{
+    display: block;
+}
