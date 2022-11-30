@@ -5,31 +5,41 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    position: relative;
 }
 :root{
     --primary-color:#686868;
     --border-bottom:2px solid transparent;
     --second-border-bottom:2px solid white;
-    --padding-left:5px;
+    --padding:10px;
 }
 .window{
     max-width: 200px;
     background-color:#000000;
+    
    
 }
-/* header{
-    background-color: rgba(0,0,0, 0.5);
+.main-header{
+    background-color: #080b12;
     position: fixed;
     z-index: 1px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:0 ;
+    left: 200px;
 }
 .header-container{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-} */
+   
+}
+/* ASIDE  */
 ul{
     list-style: none;
-    padding-left: var(--padding-left);
+    padding: var(--padding);
     margin: 10px;
 }
 .fa-house,.fa-magnifying-glass,.fa-bars{
@@ -45,7 +55,7 @@ ul li a:hover{
 }
 h4{
     color: white;
-    padding-left:var(--padding-left);
+    padding:var(--padding);
 }
 .mini-container{
     display: flex;
@@ -54,8 +64,16 @@ h4{
 .mini-container a{
     color: var(--primary-color);
     border-bottom: var(--border-bottom);
-    padding-left: var(--padding-left);
+    padding: var(--padding);
     
+}
+li{
+    margin: 5px;
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: var(--border-bottom);
 }
 a:hover{
     border-bottom: var(--second-border-bottom);
@@ -65,4 +83,19 @@ a:hover{
     padding: 5px;
    
 }
+hr{
+    color: var(--primary-color); 
+}
+#sign{
+    color: white;
+    padding: 5px;
+}
+.fa-user{
+    background-color: #a3a3a3;
+    padding: 5px;
 
+}
+.end-aside{
+    margin-top: 150px;
+}
+/* FINE ASIDE */
