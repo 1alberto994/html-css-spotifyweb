@@ -24,8 +24,10 @@ body{
     
     
 }
+
 main{
     background-color: #141922;
+    
 }
 .first-container{
     width: 80%;
@@ -37,6 +39,7 @@ main{
     display: flex;
     justify-content: flex-end;
     padding: 10px;
+   
 }
 .header-container{
     display: flex;
@@ -111,7 +114,8 @@ hr{
 
 }
 .end-aside{
-    margin-top: 150px;
+    margin-top: 450px;
+    margin-bottom: 0;
 }
 /* FINE ASIDE */
 .first-section{
@@ -149,9 +153,10 @@ p{
     color: var(--primary-color);
     margin-top: 20px;
 }
-.ciao{
+.play{
     position: relative;
-    margin: 0 auto;
+    padding: 10px;
+    
 }
 .overlay{
     display: none;
@@ -161,6 +166,30 @@ p{
     left: 0;
     background-color: rgba(0,0,0,0.5);
 }
-.ciao:hover .overlay{
+.play:hover .overlay{
     display: block;
+}
+.card-1{
+    display: flex;
+    
+}
+footer{
+    
+    background-color: #686868;
+}
+
+
+.footer-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.sinister{
+    height: 50px;
+}
+.production{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
