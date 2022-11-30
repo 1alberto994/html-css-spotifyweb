@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    position: relative;
+   
 }
 :root{
     --primary-color:#686868;
@@ -16,25 +16,35 @@ body{
 .window{
     max-width: 200px;
     background-color:#000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
     
    
 }
 .main-header{
     background-color: #080b12;
-    position: fixed;
-    z-index: 1px;
-    max-width: 1000px;
+    /* position: fixed;
+    z-index: 1px; */
+    /* max-width: 1000px; */
     display: flex;
-    justify-content: center;
-    position: absolute;
-    top:0 ;
-    left: 200px;
+    justify-content: flex-end;
+    position: relative;
+    padding: 10px;
 }
 .header-container{
     display: flex;
     align-items: center;
     justify-content: flex-end;
    
+}
+#upgrade{
+    color: white;
+    background-color: var(--primary-color);
+    border-color: white;
+    border-radius: 20px;
+    padding: 10px;
 }
 /* ASIDE  */
 ul{
