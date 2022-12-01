@@ -21,18 +21,19 @@ body{
 .window{
     width: 20%;
     background-color:#000000;
-    
-    
+    height: 1061px;  
 }
 
 main{
     background-color: #141922;
+    height: 1000px;
     
 }
 .first-container{
     width: 80%;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .main-header{
     background-color: #080b12;
@@ -55,6 +56,10 @@ main{
     padding: 10px;
 }
 /* ASIDE  */
+
+.img-container-2{
+    display: none;
+}
 ul{
     list-style: none;
     padding: var(--padding);
@@ -116,6 +121,7 @@ hr{
 .end-aside{
     margin-top: 450px;
     margin-bottom: 0;
+   
 }
 /* FINE ASIDE */
 .first-section{
@@ -136,7 +142,7 @@ h2,h3{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 28px;
 }
 .img-main{
     overflow: hidden;
@@ -192,4 +198,55 @@ footer{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+
+
+
+
+
+
+@media  screen and (max-width:700px){
+    .card{
+        flex-wrap:wrap;
+        
+    }
+    .play{
+        width: calc(100%/4);
+        margin: 5px;
+    }
+}
+@media screen and(max-width:600px){
+    .play{
+        width: 50%;
+        height: 50px;
+    }
+    .card{
+        flex-wrap:wrap;
+        
+    }
+
+}
+@media screen and(max-width:500px){
+    .img-container-2{
+        display: block;
+    }
+    .window{
+        width: 2%;
+    }
+    .first-container{
+        width: 98%;
+    }
+    .play{
+        width: 50%;
+        height: 50px;
+    }
+    .card{
+        flex-wrap:wrap;
+        
+    }
+    .img-container{
+        display: none;
+    }
+
 }
